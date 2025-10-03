@@ -18,7 +18,7 @@ export default function InstitutionFlow() {
                            </div>
 
                            <p className="text-black mb-6">
-                               After receiving an invitation from a consultant, you'll need to set up your institution account.
+                               After receiving an invitation from a consultant, you&aposll need to set up your institution account.
                            </p>
 
                            <div className="space-y-4">
@@ -27,7 +27,7 @@ export default function InstitutionFlow() {
                                    <ol className="space-y-2 list-decimal list-inside">
                                        <li>Check your email for an invitation from your consultant</li>
                                        <li>Click the unique setup link in your email</li>
-                                       <li>You'll be taken to a password set page</li>
+                                       <li>You&aposll be taken to a password set page</li>
                                        <li>Create a password for your account</li>
                                        <li>Confirm your password and set</li>
                                    </ol>
@@ -95,7 +95,7 @@ export default function InstitutionFlow() {
                                <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
                                    <h3 className="font-bold text-blue-800 mb-2">Forgot Password?</h3>
                                    <p className="text-black mb-3">
-                                       If you can't remember your password, click the "Forgot password?"
+                                       If you can&apost remember your password, click the &quot;Forgot password?&quot;
                                    </p>
                                    <div className="text-sm text-blue-700">
                                        The recovery process involves:
@@ -125,7 +125,7 @@ export default function InstitutionFlow() {
                                </div>
 
                                <p className="text-black mb-6">
-                                   After logging in, you'll be taken to your institution dashboard where you can monitor your biogas systems.
+                                   After logging in, you&aposll be taken to your institution dashboard where you can monitor your biogas systems.
                                </p>
 
                                <div className="space-y-4">
@@ -205,7 +205,7 @@ export default function InstitutionFlow() {
                                            </li>
                                            <li className="flex items-start">
                                                <FileText className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                                               <span><strong>Download Report:</strong> Download reports as it's in your reports screen in pdf form</span>
+                                               <span><strong>Download Report:</strong> Download reports as it&aposs in your reports screen in pdf form</span>
                                            </li>
                                            <li className="flex items-start">
                                                <FileText className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />

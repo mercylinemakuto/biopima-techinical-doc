@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { CheckCircle, Mail, Lock, User, Users, Settings, AlertCircle, Building, Thermometer, Gauge, Zap, FileText, Smartphone, Link }
+import { CheckCircle, Mail, Lock, User, Settings, Building, Thermometer, Gauge, Zap, Smartphone, Link }
    from 'lucide-react';
 
 
@@ -37,7 +37,7 @@ export default function ConsultantFlow() {
                                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center">
                                        <CheckCircle className="h-4 w-4 text-green-600" />
                                    </div>
-                                   <p className="ml-3 text-black">Click "Get Started" to begin the setup process</p>
+                                   <p className="ml-3 text-black">Click &quotGet Started&quot to begin the setup process</p>
                                </div>
                            </div>
                        </div>
@@ -85,7 +85,7 @@ export default function ConsultantFlow() {
 
 
                            <p className="text-black mb-6">
-                               Select how you'll be using our platform. We offer two main roles with different access levels:
+                               Select how you&aposll be using our platform. We offer two main roles with different access levels:
                            </p>
 
 
@@ -257,7 +257,7 @@ export default function ConsultantFlow() {
                                <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
                                    <h3 className="font-bold text-blue-800 mb-2">Forgot Password?</h3>
                                    <p className="text-black mb-3">
-                                       If you can't remember your password, click the "Forgot password?"
+                                       If you can&apos;t remember your password, click the &quot;Forgot password?&quot;
                                    </p>
                                    <div className="text-sm text-blue-700">
                                        The recovery process involves:
@@ -288,7 +288,7 @@ export default function ConsultantFlow() {
 
 
                            <p className="text-gray-600 mb-6">
-                               After logging in, you'll be taken to your consultant dashboard where you can monitor all your biogas installations.
+                               After logging in, you&apos;ll be taken to your consultant dashboard where you can monitor all your biogas installations.
                            </p>
 
 
@@ -364,9 +364,9 @@ export default function ConsultantFlow() {
                                <div className="bg-gray-50 rounded-lg p-4">
                                    <h3 className="font-bold text-black mb-2">Adding a Client</h3>
                                    <ol className="space-y-2 list-decimal list-inside">
-                                       <li>Click "Clients" on the sidebar</li>
-                                       <li>Enter the institutional operator's details (Institutional name, email, user name, and phone number)</li>
-                                       <li>Click "Add user"</li>
+                                       <li>Click &quot;Clients&quot; on the sidebar</li>
+                                       <li>Enter the institutional operator&apos;s details (Institutional name, email, user name, and phone number)</li>
+                                       <li>Click &quot;Add user&quot;</li>
                                        <li>The institutional operator will receive an email with a setup link</li>
                                    </ol>
                                </div>

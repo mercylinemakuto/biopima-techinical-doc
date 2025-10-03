@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { CheckCircle, Mail, AlertCircle, Shield, ArrowRight }
+import { CheckCircle, Shield, ArrowRight }
 from 'lucide-react';
 
 export default function ForgotPasswordFlow() {
@@ -18,14 +18,14 @@ export default function ForgotPasswordFlow() {
                            </div>
 
                            <p className="text-black mb-6">
-                               If you've forgotten your password, you can reset it using our secure recovery process.
+                               If you&aposve forgotten your password, you can reset it using our secure recovery process.
                            </p>
 
                            <div className="space-y-4">
                                <div className="bg-gray-50 rounded-lg p-4">
                                    <h3 className="font-bold text-black mb-2">Password Recovery Process</h3>
                                    <ol className="space-y-2 list-decimal list-inside">
-                                       <li>Click "Forgot Password?" on the login page</li>
+                                       <li>Click &quot;Forgot Password?&quot; on the login page</li>
                                        <li>Enter your email address</li>
                                        <li>Check your email for a verification code (OTP)</li>
                                        <li>Enter the OTP on the verification page</li>
@@ -41,7 +41,7 @@ export default function ForgotPasswordFlow() {
                                        </li>
                                        <li className="flex items-start">
                                            <CheckCircle className="h-5 w-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                                           <span>If you don't receive the email, check your spam folder or try again</span>
+                                           <span>If you don&apost receive the email, check your spam folder or try again</span>
                                        </li>
                                    </ul>
                                </div>
@@ -86,7 +86,7 @@ export default function ForgotPasswordFlow() {
                            </div>
 
                            <p className="text-black mb-6">
-                               After requesting a password reset, you'll receive an OTP via email. Enter this 4-digit code to verify your identity.
+                               After requesting a password reset, you&aposll receive an OTP via email. Enter this 4-digit code to verify your identity.
                            </p>
 
                            <div className="space-y-4">
@@ -99,7 +99,7 @@ export default function ForgotPasswordFlow() {
                                        </li>
                                        <li className="flex items-start">
                                            <ArrowRight className="h-5 w-5 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
-                                           <span>After verification, you'll be taken to the reset password page</span>
+                                           <span>After verification, you&aposll be taken to the reset password page</span>
                                        </li>
                                    </ul>
                                </div>
