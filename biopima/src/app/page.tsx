@@ -1,30 +1,29 @@
-import ConsultantFlow from "./pages/consultant";
-import ForgotPasswordFlow from "./pages/forgot-password";
+
 import BioPimaFeatures from "./pages/features";
 import LandingPage from "./pages/homepage";
-import BioPimaDeveloperDocs from "./pages/how-it-works";
-import CodeStructure from "./pages/code-structure";
-import DeploymentProcess from "./pages/deployment";
+// import BioPimaDeveloperDocs from "./pages/how-it-works";
+// import CodeStructure from "./pages/code-structure";
 import QAProcess from "./pages/process";
-import CodeStandards from "./pages/standards";
-import InstitutionFlow from "./pages/institution";
+// import CodeStandards from "./pages/standards";
 import Footer from "./pages/footer";
 import Setup from "./pages/setup";
+import Frontend from "./pages/frontend";
+import Backend from "./pages/backend";
  
 export default function Home() {
   return (
     <div >
       <LandingPage/>
-      <ConsultantFlow/>
-     <InstitutionFlow/>
-       <ForgotPasswordFlow/>
-       <BioPimaFeatures/>
-       <CodeStructure/>
-       <DeploymentProcess/>
-       <QAProcess/>
-       <CodeStandards/>
-       <BioPimaDeveloperDocs/>
        <Setup/>
+       <BioPimaFeatures/>
+       <Frontend/>
+       <Backend/>
+       {/* <BioPimaDeveloperDocs/> */}
+       {/* <CodeStructure/> */}
+       <QAProcess/>
+       {/* <CodeStandards/> */}
+       
+      
        <Footer/>
 
     </div>

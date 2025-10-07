@@ -1,14 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const navLabels = [
   "Home",
   "Get Started",
   "Features",
-  "How it works",
-  "Code structure",
-  "Components",
+  "Frontend",
+  "Backend",
 ];
 
 const LandingPage = () => {
@@ -43,6 +42,23 @@ const LandingPage = () => {
     requestAnimationFrame(animation);
   };
 
+  const getHref = (label: string) => {
+    switch (label) {
+      case "Home":
+        return "#home";
+      case "Get Started":
+        return "#components";
+      case "Features":
+        return "#features";
+      case "Frontend":
+        return "#frontend";
+      case "Backend":
+        return "#backend";
+      default:
+        return "#home";
+    }
+  };
+
   const handleNavClick = (label: string) => {
     setActivePage(label);
     closeMenu();
@@ -54,35 +70,51 @@ const LandingPage = () => {
       if (el) {
         smoothScrollTo(el, -80);
       }
-    } else if (href === "/") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
-  const getHref = (label: string) => {
-    switch (label) {
-      case "Home":
-        return "/";
-      case "Get Started":
-        return "#consultant";
-      case "Features":
-        return "#features";
-      case "How it works":
-        return "#howitworks";
-      case "Code structure":
-        return "#codestructure";
-      case "Components":
-        return "#components";
-      default:
-        return "/";
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionIds = ["home", "components", "features", "frontend", "backend"];
+      const scrollPosition = window.scrollY + 100; 
+
+      let currentSection = "Home";
+
+      for (const id of sectionIds) {
+        const section = document.getElementById(id);
+        if (section && scrollPosition >= section.offsetTop) {
+          switch (id) {
+            case "home":
+              currentSection = "Home";
+              break;
+            case "components":
+              currentSection = "Get Started";
+              break;
+            case "features":
+              currentSection = "Features";
+              break;
+            case "frontend":
+              currentSection = "Frontend";
+              break;
+            case "backend":
+              currentSection = "Backend";
+              break;
+          }
+        }
+      }
+      setActivePage(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); 
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div id="home" className="min-h-screen bg-white w-full pt-[70px]">
-
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-4 shadow-md bg-white w-full">
-  
+
         <div className="flex items-center space-x-2 md:w-[200px] xl:ml-[20px]">
           <Image
             width={160}
@@ -92,6 +124,7 @@ const LandingPage = () => {
             className="w-[160px] h-[47px] md:w-[200px] md:h-[60px]"
           />
         </div>
+
         <nav className="hidden md:flex xl:space-x-16 font-semibold bg-white">
           {navLabels.map((label) => (
             <span
@@ -107,6 +140,7 @@ const LandingPage = () => {
             </span>
           ))}
         </nav>
+
         <div className="md:hidden relative z-50">
           <button
             aria-label="Toggle menu"
@@ -144,7 +178,8 @@ const LandingPage = () => {
           </nav>
         </div>
       </header>
-      <main className="flex flex-col-reverse md:flex-row items-center px-6 md:px-10 lg:pr-0 xl:px-14 2xl:px-10 py-10 bg-white w-full xl:gap-2 overflow-hidden gap-10 pr-6 md:pr-0 xl:pr-0 2xl:pr-0">
+
+      <main className="flex flex-col-reverse md:flex-row items-center px-6 md:px-10 lg:pr-0 xl:px-14 2xl:px-10 py-10 bg-white w-full xl:gap-2 overflow-hidden gap-10 pr-6 md:pr-0 xl:pr-0 2xl:pr-0" id="home">
         <div className="md:w-2/3 space-y-3 max-w-3xl md:pr-10 lg:pr-12 xl:pr-0 2xl:pr-0  xl:w-[800px]">
           <h1 className="text-[25px] xl:text-[37px] 2xl:ml-10 lg:text-[26px] md:text-[30px] font-semibold text-black">
             Smart IoT Monitoring for <br />
@@ -154,7 +189,7 @@ const LandingPage = () => {
           </h1>
           <p className="text-[14px] md:text-[20px] 2xl:ml-10 lg:text-[20px] text-black">
             Monitoring gas pressure, detect leaks, track usage patterns, and
-            receive real-time alerts with BioPima &apos;s advanced IoT technology.
+            receive real-time alerts with BioPima’s advanced IoT technology.
           </p>
         </div>
         <div className="w-full md:w-[480px] md:h-90 lg:h-[400px] lg:w-[800px] lg:ml-[-80px] xl:h-[550px] xl:w-[950px] xl:ml-40 2xl:h-[700px] mt-[5px] md:mt-0 ">

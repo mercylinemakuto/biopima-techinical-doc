@@ -63,6 +63,7 @@ export default function QAProcess() {
             Bugs found in testing or production are logged in GitHub Issues, including reproduction steps, severity, and assignees for timely resolution.
           </p>
         </section>
+ 
       </div>
     </div>
   );
