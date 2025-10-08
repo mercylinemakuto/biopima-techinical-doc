@@ -61,7 +61,7 @@ const setupSteps = [
 
 export default function Home() {
   return (
-    <main id="components" className="w-full min-h-screen px-4 sm:px-6 lg:px-8 py-16 overflow-hidden bg-white font-sans">
+    <main id="iot-setup" className="w-full min-h-screen px-4 sm:px-6 lg:px-8 py-16 overflow-hidden bg-white font-sans">
       <header className="max-w-7xl mx-auto mb-12 text-center">
         <h1 className="text-5xl font-extrabold mb-12 w-max mx-auto select-none" style={{ color: "#9EAF1B" }}>
           Components And Setup
@@ -76,17 +76,19 @@ export default function Home() {
           System Architecture
         </h2>
         <div className="relative w-full h-[600px] md:h-[800px] overflow-auto rounded-lg">
-          <Image
-            src="/images/biopima.svg"
-            alt="Biopima System Architecture Diagram"
-            layout="fill"
-            objectFit="contain"
-            priority={false}
-            unoptimized
-          />
+          <a href="https://lucid.app/lucidchart/c523777b-444f-4f29-bb57-40349f2e7af6/edit?page=0_0#" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/images/biopima.svg"
+              alt="Biopima System Architecture Diagram"
+              layout="fill"
+              objectFit="contain"
+              priority={false}
+              unoptimized
+            />
+          </a>
         </div>
         <p className="mt-4 text-black leading-relaxed text-center">
-          The BioPima system follows a real-time IoT data pipeline: The ESP32 microcontroller continuously reads raw data from the pressure, temperature, and methane sensors. This data is processed locally and then transmitted over Wi-Fi to HiveMQ—a scalable MQTT message broker—using the lightweight MQTT protocol. HiveMQ receives the messages and immediately publishes them to subscribed clients, including the frontend web dashboard. As soon as new data arrives, the dashboard updates in real time, displaying live metrics and triggering visual alerts when thresholds are breached. Simultaneously, the frontend forwards the data to the backend server, where it is persisted in a database for historical analysis, reporting, and long-term monitoring. This end-to-end architecture ensures low-latency visibility, reliable alerting, and robust data storage.
+          The BioPima system follows a real-time IoT data pipeline: The ESP32 microcontroller continuously reads raw data from the pressure, temperature, and methane sensors. This data is processed locally and then transmitted over Wi-Fi to HiveMQ—a scalable MQTT message broker—using the lightweight MQTT protocol. HiveMQ receives the messages and immediately publishes them to subscribed clients, including the frontend web dashboard. As soon as new sensor data(temperature, pressure and methane readings) arrive, the dashboard updates in real time, displaying live metrics and triggering visual alerts when thresholds are breached. Simultaneously, the frontend forwards the data to the backend server, where it is persisted in a database for historical analysis, reporting, and long-term monitoring. This end-to-end architecture ensures low-latency visibility, reliable alerting, and robust data storage.
         </p>
       </section>
 
