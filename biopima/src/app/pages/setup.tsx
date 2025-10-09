@@ -50,7 +50,7 @@ const setupSteps = [
     text: `When methane concentration exceeds 2 ppm, the system triggers an alert that appears on the BioPima dashboard: "Methane Leak Detected". When methane levels remain at or below 2 ppm, the dashboard displays "No Leak Detected".`
   },
   {
-    title: "Temperature Monitoring and ",
+    title: "Temperature Monitoring",
     text: `The optimal temperature range for efficient biogas production is 35°C to 37°C.\n\n- If temperature falls below 35°C, the BioPima dashboard displays: "Temperature Too Low".\n- If temperature rises above 37°C, the dashboard shows: "Temperature Too High".\n- Temperatures within 35–37°C result in an "Optimal Temperature" status on the dashboard.`
   },
   {
