@@ -43,7 +43,7 @@ const setupSteps = [
   },
   {
     title: "Pressure Monitoring",
-    text: `The normal operating pressure range for the biodigester is 8 kPa to 15 kPa.\n\n- If pressure drops below 8 kPa, an alert is triggered and displayed on the BioPima dashboard: "Low Pressure".\n- If pressure exceeds 15 kPa, the dashboard shows: "High Pressure".\n- Pressure within 8–15 kPa results in a "Normal Pressure" status on the dashboard.`
+    text: `The normal operating pressure range for the biodigester is 8 kPa to 15 kPa.\n- If pressure drops below 8 kPa, an alert is triggered and displayed on the BioPima dashboard: "Low Pressure".\n- If pressure exceeds 15 kPa, the dashboard shows: "High Pressure".\n- Pressure within 8–15 kPa results in a "Normal Pressure" status on the dashboard.`
   },
   {
     title: "Gas Leakage Detection ",
@@ -51,7 +51,7 @@ const setupSteps = [
   },
   {
     title: "Temperature Monitoring",
-    text: `The optimal temperature range for efficient biogas production is 35°C to 37°C.\n\n- If temperature falls below 35°C, the BioPima dashboard displays: "Temperature Too Low".\n- If temperature rises above 37°C, the dashboard shows: "Temperature Too High".\n- Temperatures within 35–37°C result in an "Optimal Temperature" status on the dashboard.`
+    text: `The optimal temperature range for efficient biogas production is 35°C to 37°C.\n- If temperature falls below 35°C, the BioPima dashboard displays: "Temperature Too Low".\n- If temperature rises above 37°C, the dashboard shows: "Temperature Too High".\n- Temperatures within 35–37°C result in an "Optimal Temperature" status on the dashboard.`
   },
   {
     title: "HiveMQ and Real-Time Dashboard Integration",

@@ -63,25 +63,18 @@ const BioPimaFeatures: React.FC = () => {
           >
             Safety Alerts and Notifications
           </h2>
-          <ul className="list-disc list-inside text-black text-lg leading-relaxed space-y-2">
+          <ul className="list-disc list-outside pl-6 text-black text-lg leading-relaxed space-y-2">
             <li>
-              Instant notifications are triggered whenever gas pressure or
-              temperature deviates beyond predefined safe thresholds, enabling
-              operators to take corrective action quickly to prevent equipment
-              damage or microbial death within digesters.
+              Instant notifications are triggered whenever gas pressure or temperature deviates beyond predefined safe thresholds, enabling operators to take corrective action quickly to prevent equipment damage or microbial death within digesters.
             </li>
             <li>
-              Early warning alerts on methane leakage reduce environmental risks
-              and energy loss by ensuring rapid identification and sealing of
-              leaks, enhancing both safety and sustainability.
+              Early warning alerts on methane leakage reduce environmental risks and energy loss by ensuring rapid identification and sealing of leaks, enhancing both safety and sustainability.
             </li>
             <li>
-              Automated operational reminders for maintenance tasks such as sensor
-              calibration, valve inspection, and routine system checks help
-              maximize device longevity, reduce downtime, and maintain consistent
-              biogas quality.
+              Automated operational reminders for maintenance tasks such as sensor calibration, valve inspection, and routine system checks help maximize device longevity, reduce downtime, and maintain consistent biogas quality.
             </li>
           </ul>
+
         </section>
 
         <section
